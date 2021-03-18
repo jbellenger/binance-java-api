@@ -84,6 +84,8 @@ public class SymbolFilter {
 
   private Integer avgPriceMins;
 
+  private Boolean applyToMarket;
+
   public FilterType getFilterType() {
     return filterType;
   }
@@ -187,5 +189,13 @@ public class SymbolFilter {
 
   public void setAvgPriceMins(Integer avgPriceMins) {
     this.avgPriceMins = avgPriceMins;
+  }
+
+  public boolean getApplyToMarket(){ 
+    return applyToMarket;
+  }
+
+  public void setApplyToMarket(boolean applyToMarket) {
+    this.applyToMarket = applyToMarket;
   }
 }
