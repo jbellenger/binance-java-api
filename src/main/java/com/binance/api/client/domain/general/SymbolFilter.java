@@ -77,6 +77,13 @@ public class SymbolFilter {
    */
   private String limit;
 
+  // percent_price
+  private String multiplierUp;
+
+  private String multiplierDown;
+
+  private Integer avgPriceMins;
+
   public FilterType getFilterType() {
     return filterType;
   }
@@ -156,5 +163,29 @@ public class SymbolFilter {
 
   public void setLimit(String limit) {
     this.limit = limit;
+  }
+
+  public String getMultiplierUp() {
+    return multiplierUp;
+  }
+
+  public void setMultiplierUp(String multiplierUp) {
+    this.multiplierUp = multiplierUp;
+  }
+
+  public String getMultiplierDown() {
+    return multiplierDown;
+  }
+
+  public void setMultiplierDown(String multiplierDown) {
+    this.multiplierDown = multiplierDown;
+  }
+
+  public Integer getAvgPriceMins() {
+    return avgPriceMins;
+  }
+
+  public void setAvgPriceMins(Integer avgPriceMins) {
+    this.avgPriceMins = avgPriceMins;
   }
 }
